@@ -1,0 +1,121 @@
+OPENMM_PLUGIN_DIR = /Users/chzcjw/mambaforge/envs/openbiosim/lib/plugins
+
+Loading configuration information from file somd.cfg
+
+Running a somd-freenrg calculation using files somd.prm7, somd.rst7 and somd.pert.
+Using parameters:
+===============
+barostat == False
+buffered coordinates frequency == 0
+charge difference == 0
+constraint == hbonds-notperturbed
+crdfile == somd.rst7
+cutoff distance == 10 Å
+cutoff type == cutoffnonperiodic
+energy frequency == 250
+inverse friction == 1 ps
+lambda array == (0.0, 0.33333, 0.66667, 1.0)
+lambda_val == 1.0
+minimise == True
+morphfile == somd.pert
+ncycles == 12
+ncycles_per_snap == 4
+nmoves == 250
+perturbed residue number == 1
+platform == CPU
+save coordinates == True
+temperature == 300 K
+thermostat == True
+timestep == 0.002 ps
+topfile == somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy (v0.2) on FVFF90RVQ05N ###
+###================Setting up calculation=====================###
+New run. Loading input and creating restart
+lambda is 1.0
+Create the System...
+Selecting dummy groups
+Creating force fields... 
+Setting up moves...
+Created one MD move that uses OpenMM for all molecules on GPU device 0
+Saving restart
+Setting up sim file. 
+There are 8 atoms in the group 
+###===========================================================###
+
+Initial energy: 2766.64 g Å^2 mol-1 ps-2
+###=======================Minimisation========================###
+Running minimization.
+Tolerance for minimization: 1
+Maximum number of minimization iterations: 1000
+Energy after the minimization: 1632.06 g Å^2 mol-1 ps-2
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+250 moves 12 cycles, 6 ps simulation time
+
+Cycle =  1 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  2 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  3 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  4 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  5 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  6 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  7 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  8 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  9 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  10 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  11 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  12 
+
+Backing up previous restart
+Saving new restart
+Simulation took 0 s 
+###===========================================================###
+
+Starting /Users/chzcjw/mambaforge/envs/openbiosim/bin/somd-freenrg: number of threads equals 8

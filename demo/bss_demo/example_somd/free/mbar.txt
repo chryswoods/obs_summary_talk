@@ -1,0 +1,29 @@
+# Analysing data contained in file(s) ['example_somd/free/lambda_0.0000/simfile.dat', 'example_somd/free/lambda_0.3333/simfile.dat', 'example_somd/free/lambda_0.6667/simfile.dat', 'example_somd/free/lambda_1.0000/simfile.dat']
+#Overlap matrix
+0.9179 0.0758 0.0062 0.0000
+0.0758 0.6917 0.2305 0.0020
+0.0062 0.2305 0.6068 0.1565
+0.0000 0.0020 0.1565 0.8415
+#DG from neighbouring lambda in kcal/mol
+0.0000 0.3333 -0.9379 0.5499
+0.3333 0.6667 -0.4427 0.2551
+0.6667 1.0000 -2.7388 0.3573
+#PMF from MBAR in kcal/mol
+0.0000 0.0000 0.0000
+0.3333 -0.9379 0.5499
+0.6667 -1.3805 0.6385
+1.0000 -4.1194 0.7692
+#TI average gradients and standard deviation in kcal/mol
+0.0000 -5.2412 7.4135
+0.3333 0.3452 3.5225
+0.6667 -5.4670 6.0165
+1.0000 -7.5880 4.8982
+#PMF from TI in kcal/mol
+0.0000 0.0000
+0.3333 -0.8160
+0.6667 -1.6696
+1.0000 -3.8454
+#MBAR free energy difference in kcal/mol: 
+-4.119350, 0.769207  #WARNING SUBSAMPLING DISABLED, CONSIDER RERUN WITH SUBSAMPLING OPTION
+#TI free energy difference in kcal/mol: 
+-3.845444  #WARNING SUBSAMPLING DISABLED, CONSIDER RERUN WITH SUBSAMPLING OPTION 

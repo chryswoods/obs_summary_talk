@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section data-markdown>
+  <textarea data-template>
+    ## OpenBioSim
+    ### Bringing interoperability and interactivity to open source molecular design
+    Christopher Woods
+
+    Head of Research Software Engineering
+
+    University of Bristol
+    ---
+    ## OpenBioSim
+
+    * https://openbiosim.org
+    * Community Interest Company
+    * Develop and support Open Source software for drug design
+    * Help glue together all the amazing tools developed by the community
+    ---
+    ## Key software
+
+    * sire
+      * https://sire.openbiosim.org
+      * interoperability for molecular information
+    * BioSimSpace
+      * https://biosimspace.openbiosim.org
+      * interoperability between simulation packages
+    ---
+    ## Part 1 - sire
+    ---
+    ## sire
+    
+    Quick demo - what can it do?
+    ---
+    ## Information engine
+
+    * sire is a molecular information engine
+    * Containers store arbitrary molecular information
+    * In-built search engine retrieves that data
+    * All based on the concept of molecular property dictionaries
+      and molecular views
+    * Another demo!
+    ---
+    ## Installation and tutorials
+
+    * Distributed via conda
+      * `conda create -n openbiosim`
+      * `conda activate openbiosim`
+      * `conda install -c openbiosim sire`
+    * Also available freely online
+      * https://try.openbiosim.org
+    * Tutorials, quick start and detailed guides 
+      available at https://sire.openbiosim.org
+    ---
+    ## Part 2: BioSimSpace
+    ---
+     ![BioSimSpace wordcloud](images/wordcloud.png) <!-- .element height="60%" width="60%" -->
+    ---
+    ## BioSimSpace
+
+    Quick demo - what can it do?
+    ---
+    ## Robust components
+
+    * BioSimSpace lets us separate the creation of simulation protocols
+      from the details of running the individual software packages that
+      perform the work of those protocols
+    * Results in robust and reusable components that can be joined 
+      together into complete workflows
+    * BioSimSpace has protocols for different types of simulations,
+      including their setup and subsequent analysis
+    ---
+    ## BioSimSpace
+
+    Quick demo - free energy calculations
+    ---
+    ## BioSimSpace
+
+    * Other types of simulations are supported
+      * Absolute binding free energies
+      * Metadynamics / funnel metadynamics
+      * Steered MD
+    ---
+    ## Installation and Tutorials
+
+    * Distributed via conda
+      * `conda create -n openbiosim`
+      * `conda activate openbiosim`
+      * `conda install -c openbiosim biosimspace`
+    * Also available freely online
+      * https://try.openbiosim.org
+    * More examples at 
+      * https://biosimspace.openbiosim.org
+      * https://github.com/openbiosim/BioSimSpaceTutorials
+    ---
+    ## Conclusion
+    
+    * OpenBioSim is a Community Interest Company developing
+      and supporting software to glue together the tools
+      needed for biomolecular design
+    * Goal is to make the software robust, automatable
+      and easier to deploy and use
+    * Very open, welcoming community, very responsive to 
+      new ideas and new code
+    * Thanks for your attention :-)
+  </textarea>
+</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
